@@ -6,7 +6,9 @@ plugins {
 android {
     namespace 'com.example.intents'
     compileSdk 33
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId "com.example.intents"
         minSdk 33
