@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
         val name = intent.getStringExtra("name")
         val username = intent.getStringExtra("username")
 
-        Toast.makeText(applicationContext,"Welcome! $name",Toast.LENGTH_LONG)
+        Toast.makeText(applicationContext,"Welcome, $name",Toast.LENGTH_LONG).show()
         binding.textViewName.text = "Name: $name"
         binding.textViewUsername.text = "Username: $username"
     }
