@@ -19,6 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         sharedPreferences = this.getSharedPreferences(
             "com.example.sharedpreferences",Context.MODE_PRIVATE)
+
+        var resultFromPreferences = sharedPreferences.getInt("result",0)
+        findViewById<TextView>(R.id.resultText).text = "Result is: $resultFromPreferences"
     }
     fun sum(view:View){
         number1=findViewById<TextView>(R.id.editTextNumber1).text.toString().toInt()
