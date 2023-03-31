@@ -1,0 +1,1 @@
+A calculator where the user enters 2 numbers and performs a calculation according to the operator they choose from addition, subtraction, multiplication, division, prints the result of this calculation and also saves it as sharedpreferences.
