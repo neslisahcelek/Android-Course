@@ -11,11 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:gravity="center"
         android:hint="Press Start!"
         android:textAlignment="center"
-        android:textColor="#FF4E22"
+        android:textColor="@color/orange"
         android:textDirection="anyRtl"
-        android:textSize="30sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -24,6 +25,7 @@
         app:layout_constraintVertical_bias="0.313" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="245dp"
         android:layout_height="63dp"
         android:layout_marginTop="50dp"
@@ -31,7 +33,6 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewNumber"
         app:layout_constraintVertical_bias="0.0">
@@ -57,5 +58,19 @@
             android:text="START"
             android:textSize="20sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:onClick="restart"
+        android:text="RESTART"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
