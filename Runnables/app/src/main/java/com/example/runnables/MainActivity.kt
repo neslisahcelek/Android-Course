@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         handler.post(runnable)
     }
     fun stop(view:View){
+        binding.buttonStart.setEnabled(true)
         handler.removeCallbacks(runnable)
         binding.textViewNumber.text="$number"
     }
