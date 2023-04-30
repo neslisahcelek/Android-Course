@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 
 class Fragment1 : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { //genelde boş
         super.onCreate(savedInstanceState)
 
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?, //inflater: layoutu xml dosyasına bağlamak için kullanılır
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
